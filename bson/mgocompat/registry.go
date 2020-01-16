@@ -35,6 +35,9 @@ var (
 // primitive codecs.
 var mgoRegistry = newRegistryBuilder().Build()
 
+// MgoRegistry is mgocompat reg
+var MgoRegistry = mgoRegistry
+
 // newRegistryBuilder creates a new RegistryBuilder configured with the default encoders and
 // deocders from the bsoncodec.DefaultValueEncoders and bsoncodec.DefaultValueDecoders types and the
 // PrimitiveCodecs type in this package.
